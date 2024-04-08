@@ -16,18 +16,14 @@ function displayPokemonInfo(pokemonData) {
     const pokemonInfoDiv = document.getElementById('pokemonInfo');
     const capitalizedPokemonName = pokemonData.name.charAt(0).toUpperCase() + pokemonData.name.slice(1);
 
-    // Get sprite image URL from the "art" folder
     const spriteUrl = `art/${pokemonData.id}.png`;
 
-    // Convert height from decimeters to feet and inches
     const totalInches = pokemonData.height * 3.93701;
     const feet = parseInt(totalInches / 12); // Extract feet without rounding
     const inches = totalInches % 12; // Extract remaining inches
 
-    // Convert weight from hectograms to pounds
     const weightInLbs = (pokemonData.weight) * 0.220462;
 
-    // Get type images from the "types" folder
     const typeImages = pokemonData.types.map(type => `types/${type.type.name}.png`);
 
     pokemonInfoDiv.innerHTML = `
