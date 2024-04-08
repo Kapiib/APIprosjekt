@@ -34,14 +34,14 @@ function displayPokemonInfo(pokemonData) {
         <h2>ID: ${pokemonData.id}</h2>
         <h2>Name: ${capitalizedPokemonName}</h2>
         <img src="${spriteUrl}" alt="${capitalizedPokemonName}">
-        <p>Height: ${feet}' ${inches.toFixed()}"</p>
-        <p>Weight: ${weightInLbs.toFixed(2)} lbs</p>
-        <p>Type:</p>
-        <ul>
+        <p class="height">Height: ${feet}' ${inches.toFixed()}"</p>
+        <p class="weight">Weight: ${weightInLbs.toFixed(2)} lbs</p>
+        <p class="types">Types:</p>
+        <ul class="typesImg">
             ${pokemonData.types.map((type, index) => `<li><img src="${typeImages[index]}" alt="${type.type.name}"></li>`).join('')}
         </ul>
-        <p>Moves:</p>
-        <ul>
+        <p class="moves">Moves:</p>
+        <ul class="abilities">
             ${pokemonData.abilities.map(ability => `<li>${ability.ability.name}</li>`).join('')}
         </ul>
     `;

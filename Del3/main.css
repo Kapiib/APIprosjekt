@@ -24,6 +24,11 @@ li{
     margin-left: -5%;
 }
 
+#searchInput{
+    height: 30px;
+    border-radius: 5px;
+}
+
 input[type="text"] {
     padding: 10px;
     margin-bottom: 10px;
@@ -49,4 +54,31 @@ button:hover {
 #pokemonInfo {
     margin-top: 20px;
     text-align: left;
+}
+
+.moves{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.types{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.height{
+    font-size: 22px;
+}
+
+.weight{
+    font-size: 22px;
+}
+
+.typesImg{
+    margin-top: -2%;
+}
+
+.abilities{
+    margin-top: -3%;
+    font-size: 18px;
 }
