@@ -2,9 +2,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <script src="./script.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <h1>Del 2</h1>
+    <h1>Kamera</h1>
+
+    <div class="camera-ctn">
+        <canvas id="canvas"> </canvas>
+
+        <div class="camera-view">
+          <video id="camera-stream" autoplay loop muted>
+            <source src="">
+          </video>
+        </div>
+
+        <div class="camera-bottom">
+          <div class="inner">
+            <div class="lens-modifier">
+              <button>.5x</button>
+              <button class="active">1x</button>
+              <button>3x</button>
+            </div>
+
+            <div class="modes">
+              <button>Live</button>
+              <button class="active">Photo</button>
+              <button>Video</button>
+              <button>Real time</button>
+            </div>
+
+            <div class="shutter-ctn">
+              <button id="photos-btn" class="previous-shots">
+              </button>
+              <button id="shutter" class="shutter">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="gallery-view">
+        <button id="prev">Prev</button>
+        <img data-index="0" src="" alt="current viewed img">
+        <button id="next">Next</button>
+        <button id="close-gallery">Go back</button>
+      </div>
 </body>
 </html>

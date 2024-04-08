@@ -1,10 +1,19 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <h1>Del 3</h1>
+    <div class="container">
+        <h1>Pokédex</h1>
+        <input type="search" id="searchInput" name="input" placeholder="Enter Pokémon name">
+        <button onclick="searchPokemon()">Search</button>
+        <div id="pokemonInfo"></div>
+    </div>
+
 </body>
 </html>

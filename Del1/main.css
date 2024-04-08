@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
+    letter-spacing: 0.2em;
+    font-size: 0.8em;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 2%;
+}
+
+form{
+    text-align: center;
+    margin-top: 5.5%;
+    font-size: 30px;
+}
+
+input{
+    font-size: 18px;
+    border-radius: 7px;
+}
+
+input[type="text"] {
+    border: 0px solid black;
+    border-bottom: 3px solid gray;
+    background-color: transparent;
+}
+
+input:focus{
+    outline: none;
+}
+
+.icon img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 18%;
+    margin-top: -3%;
+}
+
+.details h5{
+    text-align: center;
+    font-size: 30px;
+    margin-top: -5%;
+    margin-bottom: 3%;
+}
+
+.details div{
+    text-align: center;
+    font-size: 21px;
+    margin-top: -1%;
+    padding-bottom: 3%;
+}
+
+#errorMsg{
+    display: block;
+    text-align: center;
+    margin-top: -2%;
+    margin-bottom: 4%;
+    font-size: 25px;
+}

@@ -2,9 +2,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <title>Del 1</title>
 </head>
 <body>
-    <h1>Del 1</h1>
+
+    <div>
+
+        <h1>What Da Weather</h1>
+
+        <form>
+            <label for="city">Enter location </label>
+            <input type="text" name="city" class="city" placeholder="City">
+        </form>
+
+        <div class="card">
+            <img src="">
+            <div class="icon">
+                <img src="./SVG/1.svg" alt="">
+            </div>
+            <div>
+                <p id="errorMsg"></p>
+            </div>
+            <div class="details">
+                <h5>City name</h5>
+                <div class="condition">Weather condition</div>
+                <div class="temp">
+                    <span>temp</span>
+                    <span>&deg;C</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="scripts/api.js"></script>
+    <script src="scripts/app.js"></script>
 </body>
 </html>
